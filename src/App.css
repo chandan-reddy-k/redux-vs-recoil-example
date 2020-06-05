@@ -1,0 +1,146 @@
+.App {
+  text-align: center;
+  position: relative;
+  height: 100vh;
+}
+
+.App-logo {
+  height: 50px;
+  pointer-events: none;
+}
+
+.footer-wrapper{
+  position: absolute;
+  bottom: 0px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #282c34;
+  color: white;
+  width: 100%;
+}
+
+.footer-text{
+  margin: 1em 5em;
+  display: flex;
+  align-items: center;
+}
+
+.footer-text a{
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.body-container{
+  display: flex;
+  height: 85vh;
+}
+
+.left-container{
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.right-container{
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.component-wrapper{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.component-text{
+  font-size: 48px;
+  margin: 10px 0;
+}
+
+.component-number{
+  font-weight: bold;
+  font-size: 72px;
+  margin: 0 15px;
+}
+
+.component-fire-button{
+  font-size: 72px;
+  cursor: pointer;
+  border: 2px solid orange;
+  width: fit-content;
+  border-radius: 50%;
+  width: 96px;
+  user-select: none;
+}
+
+.notice-bar{
+  background-color: #282c3465;
+  padding: 10px;
+  font-weight: 600;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 5s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .body-container{
+    flex-direction: column;
+    justify-content: space-around;
+    height: 75vh;  
+  }
+  .left-container{
+    width: 100%;
+  }
+  .right-container{
+    width: 100%;
+  }
+  .footer-wrapper{
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-text{
+    margin: 0;
+  }
+  .component-text{
+    font-size: 24px;
+  }
+  .component-number{
+    font-size: 48px;
+  }
+  .component-fire-button{
+    margin: 10px;
+  }
+}
